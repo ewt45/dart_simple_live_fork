@@ -190,8 +190,8 @@ class MyApp extends StatelessWidget {
       }
       return GetMaterialApp(
         title: "Simple Live",
-        theme: AppStyle.lightTheme.copyWith(colorScheme: lightColorScheme),
-        darkTheme: AppStyle.darkTheme.copyWith(colorScheme: darkColorScheme),
+        theme: AppStyle.lightTheme.copyWith(colorScheme: lightColorScheme, fontFamily: null),
+        darkTheme: AppStyle.darkTheme.copyWith(colorScheme: darkColorScheme, fontFamily: null),
         themeMode:
             ThemeMode.values[Get.find<AppSettingsController>().themeMode.value],
         initialRoute: RoutePath.kIndex,
